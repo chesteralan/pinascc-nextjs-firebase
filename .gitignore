@@ -41,3 +41,7 @@ firebase-service-account.json
 .idea
 .idea/*
 .idea/
+
+.wrangler
+.wrangler/*
+.wrangler/
