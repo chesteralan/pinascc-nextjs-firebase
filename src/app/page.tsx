@@ -1,4 +1,4 @@
-import {signIn} from "@/auth";
+import LoginButtons from "@/modules/LoginButtons";
 
 export default function Home() {
   return (
@@ -9,11 +9,7 @@ export default function Home() {
         </h1>
       </main>
       <footer className="row-start-3 flex gap-6 flex-wrap items-center justify-center">
-        <form action={async () => {
-          "use server"
-          await signIn("google")
-        }}><button>Sign in with Google</ button>
-        </ form>
+        <LoginButtons />
       </footer>
     </div>
   );
