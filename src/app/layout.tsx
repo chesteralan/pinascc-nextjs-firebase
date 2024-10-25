@@ -1,3 +1,4 @@
+import { Analytics } from "@vercel/analytics/react"
 import { SidebarProvider } from "@/components/ui/sidebar"
 import { AppSidebar } from "@/components/AppSidebar"
 import "./globals.css";
@@ -21,6 +22,7 @@ export default function RootLayout({
           {children}
         </main>
       </SidebarProvider>
+      <Analytics />
       </body>
     </html>
   );
